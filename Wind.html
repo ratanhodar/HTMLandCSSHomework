@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Review</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <div >
+    <nav class="navbar">
+      <div class="navbar-h">
+          <a  href="index.html">Lattitude</a>
+      </div>
+      <ul class="navbar-right" >
+        <li class="dropdown">
+          <button class="dropbtn"> Plot
+              <i class="fa fa-caret-down"></i>
+            </button>  
+          <ul class="dropdown-content">
+              <li><a href="Maxtemp.html">MaxTemp</a></li>
+              <li><a href="Wind.html">Wind</a></li>
+              <li><a href="cloudiness.html">Cloudiness</a></li>
+              <li><a href="humidity.html">Humidity</a></li>
+            </ul>
+        </li>
+        <li ><a href="comparison.html">Comparison</a></li>
+        <li ><a href="data.html">Data</a></li> 
+      </ul>
+      <select id="nav-select">
+        <option value="Latitude">Latitude</option>
+        <option value="Plot">Plot</option>
+        <option value="Comparison">Comparison</option>
+        <option value="Data">Data</option>
+      </select>
+      <div class="clearfix"></div>
+    </nav>
+    
+    <main>
+      <div class="parent-container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="container1">
+              <section class="posts">
+                <!-- <article class="post"> -->
+                  <h3>Wind Speed</h3>
+                  <hr>                       
+                  <p style="font-size:12px;"> <img src="Fig4.png" alt="WindSpeed" style="width:100%;height:100%;">
+                  Wind Speeds get higher as we go to higher latitudes. Between -20 and 40 latitude mostly
+                  the Wind speed is almost the same.
+                  </p>
+                  
+                <!-- </article> -->
+              </section>
+            </div>
+          </div> 
+          <div class="col-md-6">
+            <div class="container2">
+              <section class="posts">
+                <!-- <article class="post"> -->
+                  <h3>Visualizations</h3>
+                  <hr>
+                  <!-- <p ><img src="Fig1.png" alt="Latitude" style="width:300px;height:300px;">
+                    <img src="Fig2.png" alt="Latitude" style="width:300px;height:300px;"> 
+                    <img src="Fig3.png" alt="Latitude" style="width:300px;height:300px;"> 
+                    <img src="Fig4.png" alt="Latitude" style="width:300px;height:300px;">  
+                  </p> -->
+                  <div class="row">
+                      <div class="col-md-6">
+                          <a href="Maxtemp.html">
+                        <img src="Fig1.png" alt="Snow" style="width:100%">
+                            </a>
+                      </div>
+                      <div class="col-md-6">
+                          <a href="humidity.html">
+                        <img src="Fig2.png" alt="Forest" style="width:100%">
+                      </a>
+                      </div>
+                  </div> 
+                  <div class="row">
+                      <div class="col-md-6">
+                          <a href="cloudiness.html">
+                        <img src="Fig3.png" alt="Snow" style="width:100%">
+                         </a>
+                      </div>
+                      <div class="col-md-6">
+                          <a href="Wind.html">
+                        <img src="Fig4.png" alt="Forest" style="width:100%">
+                      </a>
+                      </div>
+                  </div> 
+         
+                <!-- </article> -->
+              </section>
+            </div>
+          </div> 
+        </div> 
+      </div>   
+    </main>
+  </div>
+  <footer class="footer navbar-fixed-bottom"> 
+      <p class="text-center">
+        &copy; Copyright Coding Bootcamp 2017
+      </p>
+    </footer>
+</body>
+
+</html>
